@@ -19,7 +19,7 @@ const contenedorProductos = new Contenedor("./src/data/productos.json");
 const contenedorMensajes = new Contenedor("./src/data/mensajes.json");
 
 io.on("connection", async (socket) => {
-	const products = await contProductos.getAll();
+	const products = await contenedorProductos.getAll();
 
 	socket.emit("productos", products);
 
