@@ -1,5 +1,8 @@
 const socket = io.connect();
-
+const formulario = document.getElementById("formulario");
+const title = document.getElementById("title");
+const price = document.getElementById("price");
+const thumbnail = document.getElementById("thumbnail");
 formulario.addEventListener("submit", (e) => {
 	e.preventDefault();
 
@@ -11,9 +14,7 @@ formulario.addEventListener("submit", (e) => {
 
 	socket.emit("nuevoProducto", products);
 
-	messageForm.reset();
-
-	message.focus();
+	formulario.reset();
 });
 socket.on("productos", (products) => {
 	const html = tableRows(products);
@@ -39,10 +40,6 @@ const user = document.getElementById("user");
 const message = document.getElementById("msg");
 const send = document.getElementById("send");
 const messageForm = document.getElementById("messageForm");
-const formulario = document.getElementById("formulario");
-const title=document.getElementById("title"),
-const price=document.getElementById("price"),
-const thumbnail=document.getElementById("thumbnail")
 
 messageForm.addEventListener("submit", (e) => {
 	e.preventDefault();

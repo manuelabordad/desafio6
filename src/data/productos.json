@@ -1,1 +1,20 @@
-[]
+[
+  {
+    "title": "cupcackes",
+    "price": "15000",
+    "thumbnail": "https://i.imgur.com/VWBVRQ7.jpg",
+    "id": 1
+  },
+  {
+    "title": "apple pie ",
+    "price": "14000",
+    "thumbnail": "https://i.imgur.com/Lr5g6b1.jpg",
+    "id": 2
+  },
+  {
+    "title": "chocolate cake",
+    "price": "20000",
+    "thumbnail": "https://i.imgur.com/R0kDDNV.jpg",
+    "id": 3
+  }
+]
